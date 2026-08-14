@@ -3,42 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="요구사항을 API와 데이터 구조로 구체화하고 인증·배포까지 연결하는 백엔드 개발자 강한솔의 포트폴리오입니다."
-    />
+    <meta name="description" content="요구사항을 API와 데이터 구조로 구체화하고 인증·배포까지 연결하는 백엔드 개발자 강한솔의 포트폴리오입니다." />
     <title>강한솔 | Backend Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles.css?v=20260814-3" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css?v=20260815-1" />
   </head>
   <body>
     <header class="site-header" data-header>
       <a class="brand" href="#top" aria-label="홈으로 이동">
-        <span class="brand-mark">⌘</span>
-        <span>BACKEND_</span>
+        <span class="network-logo" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+        <span>HANSOL</span>
       </a>
       <nav class="nav-links" aria-label="주요 메뉴">
         <a href="#about">소개</a>
         <a href="#skills">기술 스택</a>
         <a href="#work">프로젝트</a>
-        <a href="#experience">경력 &amp; 경험</a>
         <a href="#contact">연락처</a>
       </nav>
-      <button
-        class="menu-toggle"
-        type="button"
-        data-menu-toggle
-        aria-label="메뉴 열기"
-        aria-expanded="false"
-      >
-        <span></span>
-        <span></span>
-      </button>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-label="메뉴 열기" aria-expanded="false"><span></span><span></span></button>
     </header>
 
     <main id="top">
@@ -47,238 +31,97 @@
           <div class="hero-content">
             <p class="hero-eyebrow">데이터와 로직 사이, 문제의 본질을 설계합니다.</p>
             <h1 id="hero-title">흔적을 남기는 코드로,<br /><span>가치를 만드는 시스템으로.</span></h1>
-            <p class="hero-copy">
-              백엔드 개발자로서 안정적인 서비스의 기반을 설계하고 구현합니다.<br />
-              새로운 기술을 빠르게 학습하고, 팀과 함께 더 나은 서비스를 만들어갑니다.
-            </p>
+            <p class="hero-copy">요구사항을 데이터와 API로 구체화하고, 실제 동작까지 검증합니다.<br />낯선 문제도 구조적으로 파고들어 팀과 함께 끝까지 해결합니다.</p>
             <div class="hero-actions" aria-label="주요 행동">
               <a class="button primary" href="#work">프로젝트 보기 <span aria-hidden="true">→</span></a>
-              <a class="button ghost" href="mailto:flysky1114@gmail.com">이메일 보내기</a>
+              <a class="button ghost" href="mailto:kanghansol9266@naver.com">이메일 보내기</a>
             </div>
             <ul class="hero-chips" aria-label="프로필 요약">
               <li><span aria-hidden="true">⌖</span> Seoul, KR</li>
-              <li><span aria-hidden="true">◷</span> 실무 경험 1년+</li>
-              <li><span aria-hidden="true">▣</span> 팀 협업 경험</li>
-              <li><span aria-hidden="true">↗</span> 새로운 기술에 관심</li>
+              <li><span aria-hidden="true">◷</span> 제조 설계 실무 1년</li>
+              <li><span aria-hidden="true">▣</span> SSAFY 팀 프로젝트</li>
+              <li><span aria-hidden="true">↗</span> API부터 배포까지</li>
             </ul>
           </div>
           <div class="hero-visual" aria-hidden="true">
             <div class="network-grid"></div>
-            <div class="tech-cube cube-server"><span>SERVER</span></div>
-            <div class="tech-cube cube-code">&lt;/&gt;</div>
-            <div class="tech-cube cube-data">DB</div>
-            <div class="tech-cloud">CLOUD</div>
-            <span class="network-node node-one"></span>
-            <span class="network-node node-two"></span>
-            <span class="network-node node-three"></span>
+            <div class="hero-tech-logo hero-logo-spring"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="" /><strong>Spring Boot</strong><small>APPLICATION</small></div>
+            <div class="hero-tech-logo hero-logo-java"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="" /><strong>Java</strong></div>
+            <div class="hero-tech-logo hero-logo-postgres"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="" /><strong>PostgreSQL</strong></div>
+            <div class="hero-tech-logo hero-logo-redis"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" alt="" /><strong>Redis</strong></div>
+            <div class="hero-tech-logo hero-logo-docker"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="" /><strong>Docker</strong></div>
+            <div class="hero-tech-logo hero-logo-aws"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="" /><strong>AWS</strong></div>
+            <div class="hero-tech-logo hero-logo-nginx"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg" alt="" /><strong>Nginx</strong></div>
+            <span class="network-node node-one"></span><span class="network-node node-two"></span><span class="network-node node-three"></span>
           </div>
         </div>
       </section>
 
       <section class="profile-strip" aria-label="핵심 지표">
-        <article><strong>3+</strong><span>프로젝트 수행</span></article>
-        <article><strong>1+</strong><span>년 실무 경험</span></article>
-        <article><strong>10+</strong><span>핵심 기술 보유</span></article>
-        <article><strong>∞</strong><span>문제 해결에 진심</span></article>
+        <article><strong>4</strong><span>프로젝트</span></article>
+        <article><strong>1년</strong><span>제조 설계 실무</span></article>
+        <article><strong>2</strong><span>국가 자격</span></article>
+        <article><strong>1</strong><span>프로젝트 수상</span></article>
+      </section>
+
+      <section class="page-section intro-section" id="about">
+        <div class="section-heading"><h2>소개</h2><p>기계 설계 현장에서 익힌 구조적 사고를 소프트웨어 설계와 문제 해결로 확장하고 있습니다.</p></div>
+        <div class="intro-profile">
+          <div><p class="panel-label">BACKEND DEVELOPER</p><h3>강한솔</h3><p>문제를 정의하고 구조를 설계한 뒤, 실제 동작으로 끝까지 검증합니다.</p></div>
+          <div class="profile-links"><a href="mailto:kanghansol9266@naver.com">Email ↗</a><a href="https://github.com/smoothie-99" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+        </div>
+        <div class="intro-grid">
+          <article class="intro-career">
+            <p class="panel-label">경력 및 경험</p>
+            <div class="career-timeline">
+              <div class="timeline"><span class="timeline-dot" aria-hidden="true">01</span><div><h3>2차전지 믹싱 장비 제조 회사</h3><p class="career-role">기계 설계 엔지니어 · 1년</p><ul><li>음·양극 믹싱 장비 도면 설계·수정 및 BOM 작성</li><li>모터·베어링·커플링 구매와 외주 제작사 협업</li><li>생산 현장 실측으로 간섭과 작업 공간을 검토해 도면 개선</li><li>STAR-CCM+ 교육 내용을 사내 가이드로 문서화·공유</li></ul></div></div>
+              <div class="timeline timeline-education"><span class="timeline-dot" aria-hidden="true">02</span><div><h3>삼성 청년 SW·AI 아카데미</h3><p class="career-role">SSAFY · Java 기반 웹 개발 교육</p><ul><li>Java·Spring Boot 기반 백엔드와 알고리즘 학습</li><li>요구사항·기능 명세, ERD, REST API 설계</li><li>Git·Jira 기반 팀 협업과 프로젝트 수행</li><li>Postman 검증 및 Docker·AWS 배포 경험</li></ul></div></div>
+            </div>
+          </article>
+          <aside class="intro-records">
+            <section><p class="panel-label">취득 자격증</p><div class="record-list"><article><span>2025.12</span><strong>정보처리기사</strong></article><article><span>2023.08</span><strong>컴퓨터활용능력 1급</strong></article></div></section>
+            <section><p class="panel-label">수상 내역</p><div class="record-list"><article><span>2026.03</span><strong>2인 비대칭 요리게임</strong></article></div></section>
+          </aside>
+        </div>
+      </section>
+
+      <section class="page-section stack-section" id="skills">
+        <div class="section-heading"><h2>기술 스택</h2><p>프로젝트에서 직접 사용하고 연동·검증한 기술입니다.</p></div>
+        <div class="stack-groups">
+          <article><h3>Language</h3><div class="stack-items"><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="" /><b>Java</b></span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" /><b>Python</b></span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="" /><b>JavaScript</b></span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="" /><b>TypeScript</b></span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="" /><b>SQL</b></span></div></article>
+          <article><h3>Framework</h3><div class="stack-items"><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="" /><b>Spring Boot</b></span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="" /><b>Spring Security</b></span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hibernate/hibernate-original.svg" alt="" /><b>JPA</b></span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="" /><b>React</b></span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="" /><b>React Native</b></span></div></article>
+          <article><h3>Database</h3><div class="stack-items"><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="" /><b>PostgreSQL</b></span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" alt="" /><b>Redis</b></span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="" /><b>AsyncStorage</b></span></div></article>
+          <article><h3>Infra / DevOps</h3><div class="stack-items"><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="" /><b>AWS EC2</b></span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="" /><b>Docker</b></span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg" alt="" /><b>Nginx</b></span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg" alt="" /><b>Jenkins</b></span></div></article>
+          <article><h3>Tools</h3><div class="stack-items"><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" alt="" /><b>Postman</b></span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg" alt="" /><b>Jira</b></span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="" /><b>Git</b></span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg" alt="" /><b>GitLab</b></span></div></article>
+        </div>
       </section>
 
       <section class="page-section projects-section" id="work">
-        <div class="section-index">02. PROJECTS</div>
-        <div class="section-heading centered">
-          <p class="section-kicker">BACKEND PROJECTS</p>
-          <h2>직접 설계하고, 문제를 해결한 프로젝트</h2>
-          <p>사용자의 문제를 해결하기 위한 고민과 기술적 의사결정의 기록입니다.</p>
-        </div>
-
-        <div class="project-toolbar" aria-label="프로젝트 필터">
-          <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">전체</button>
-          <button class="filter-button" type="button" data-filter="backend" aria-pressed="false">백엔드</button>
-          <button class="filter-button" type="button" data-filter="data-api" aria-pressed="false">데이터 · API</button>
-          <button class="filter-button" type="button" data-filter="infra" aria-pressed="false">인프라</button>
-          <button class="filter-button" type="button" data-filter="ai" aria-pressed="false">AI 연계</button>
-        </div>
-
+        <div class="section-heading centered"><h2>직접 설계하고, 문제를 해결한 프로젝트</h2><p>맡은 역할과 구현 근거, 서비스 전체 흐름을 함께 보여드립니다.</p></div>
+        <div class="project-toolbar" aria-label="프로젝트 필터"><button class="filter-button active" type="button" data-filter="all" aria-pressed="true">전체</button><button class="filter-button" type="button" data-filter="backend" aria-pressed="false">백엔드</button><button class="filter-button" type="button" data-filter="data-api" aria-pressed="false">데이터 · API</button><button class="filter-button" type="button" data-filter="infra" aria-pressed="false">인프라</button><button class="filter-button" type="button" data-filter="ai" aria-pressed="false">AI 연계</button><button class="filter-button" type="button" data-filter="personal" aria-pressed="false">개인 프로젝트</button></div>
         <div class="project-grid">
-          <article class="project-card" data-category="backend data-api infra">
-            <div class="project-image project-image-cook">
-              <img src="./assets/ppt/image15.png" alt="내 요리를 부탁해 게임 화면" />
-              <span class="project-type">팀 프로젝트</span>
-            </div>
-            <div class="project-body">
-              <p class="project-role">Backend · Infra · Client</p>
-              <h3>내 요리를 부탁해</h3>
-              <p>JWT 인증부터 게임 데이터 저장, 배포 환경까지 연결한 비대칭 협동 요리 게임입니다.</p>
-              <ul class="project-tags">
-                <li>Java</li><li>Spring Boot</li><li>PostgreSQL</li><li>JWT</li><li>Docker</li>
-              </ul>
-              <button class="project-link" type="button" data-project="cook">자세히 보기 <span>→</span></button>
-            </div>
-          </article>
-
-          <article class="project-card" data-category="backend data-api infra ai">
-            <div class="project-image project-image-jipchak">
-              <img src="./assets/ppt/image10.png" alt="JipChak 게임 영상 화면" />
-              <span class="project-type">팀 프로젝트</span>
-            </div>
-            <div class="project-body">
-              <p class="project-role">Backend · Infra · AI Integration</p>
-              <h3>JipChak</h3>
-              <p>AI 추론 결과와 QR 영상 조회 흐름을 사용자 기능으로 연결한 인형뽑기 플랫폼입니다.</p>
-              <ul class="project-tags">
-                <li>Spring Boot</li><li>Redis</li><li>Docker</li><li>RunPod</li><li>YOLO</li>
-              </ul>
-              <button class="project-link" type="button" data-project="jipchak">자세히 보기 <span>→</span></button>
-            </div>
-          </article>
-
-          <article class="project-card" data-category="data-api collaboration">
-            <div class="project-image project-image-hearbe">
-              <img src="./assets/ppt/image8.png" alt="HearBe 쇼핑 플랫폼 화면" />
-              <span class="project-type">팀 프로젝트</span>
-            </div>
-            <div class="project-body">
-              <p class="project-role">Frontend · API Collaboration</p>
-              <h3>HearBe</h3>
-              <p>API 명세와 응답 데이터를 검증하고 누락을 개선한 시각장애인용 음성 쇼핑 플랫폼입니다.</p>
-              <ul class="project-tags">
-                <li>API Spec</li><li>Postman</li><li>DTO</li><li>React</li>
-              </ul>
-              <button class="project-link" type="button" data-project="hearbe">자세히 보기 <span>→</span></button>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="page-section about-section" id="about">
-        <div class="section-index">04. ABOUT &amp; SKILLS</div>
-        <div class="about-layout">
-          <article class="profile-panel">
-            <p class="panel-label">한눈에 보는 나</p>
-            <div class="avatar" aria-hidden="true">KH</div>
-            <h2>강한솔</h2>
-            <p class="profile-position">백엔드 개발자</p>
-            <blockquote>“문제를 정의하고 구조를 설계한 뒤, 실제 동작으로 끝까지 검증합니다.”</blockquote>
-            <div class="profile-links">
-              <a href="mailto:flysky1114@gmail.com">Email ↗</a>
-              <a href="https://github.com/smoothie-99" target="_blank" rel="noreferrer">GitHub ↗</a>
-            </div>
-          </article>
-
-          <article class="skills-panel" id="skills">
-            <p class="panel-label">기술 스택</p>
-            <dl class="skill-rows">
-              <div><dt>Language</dt><dd><span>Java</span><span>Python</span><span>JavaScript</span><span>SQL</span></dd></div>
-              <div><dt>Framework</dt><dd><span>Spring Boot</span><span>Spring Security</span><span>JPA</span><span>React</span></dd></div>
-              <div><dt>Database</dt><dd><span>PostgreSQL</span><span>Redis</span></dd></div>
-              <div><dt>Infra / DevOps</dt><dd><span>AWS EC2</span><span>Docker</span><span>Nginx</span><span>Jenkins</span></dd></div>
-              <div><dt>Tools</dt><dd><span>Postman</span><span>Jira</span><span>Git</span><span>GitLab</span></dd></div>
-            </dl>
-          </article>
-        </div>
-
-        <div class="strengths">
-          <p class="panel-label">강점 키워드</p>
-          <div class="strength-grid">
-            <article><span class="strength-icon">⌘</span><h3>문제 해결</h3><p>현상보다 원인을 추적하고 근거를 바탕으로 해결합니다.</p></article>
-            <article><span class="strength-icon">♧</span><h3>협업 &amp; 소통</h3><p>API 계약과 역할을 명확히 정리해 팀의 연결 비용을 줄입니다.</p></article>
-            <article><span class="strength-icon">↗</span><h3>학습 &amp; 성장</h3><p>필요한 기술을 빠르게 익혀 프로젝트에 적용합니다.</p></article>
-            <article><span class="strength-icon">◇</span><h3>책임감 &amp; 완결력</h3><p>구현을 넘어 연동과 배포 환경의 동작까지 확인합니다.</p></article>
-          </div>
-        </div>
-      </section>
-
-      <section class="page-section experience-section" id="experience">
-        <div class="section-index">05. EXPERIENCE TIMELINE</div>
-        <div class="experience-layout">
-          <article class="career-column">
-            <p class="panel-label">경력</p>
-            <div class="timeline">
-              <span class="timeline-dot" aria-hidden="true">▣</span>
-              <div>
-                <h2>2차전지 장비 제조 회사</h2>
-                <p class="career-role">설계 엔지니어 · 약 1년</p>
-                <ul>
-                  <li>장비 구조와 요구사항을 도면으로 구체화</li>
-                  <li>BOM 작성 및 부품 구성·발주 관리</li>
-                  <li>현장 이슈를 분석하고 설계 개선안 반영</li>
-                  <li>변경 이력을 관리하며 부서 간 협업 수행</li>
-                </ul>
-              </div>
-            </div>
-            <p class="career-bridge">더 나은 시스템을 만들기 위해,<br /><strong>개발의 길로 전환했습니다.</strong><span>→</span></p>
-          </article>
-
-          <article class="highlight-column">
-            <p class="panel-label">주요 경험 하이라이트</p>
-            <div class="highlight-list">
-              <article><span class="highlight-icon">⌁</span><div><h3>API 응답 누락 발견 및 연동 개선</h3><p>Postman 검증으로 화면에 필요한 데이터 누락을 찾고 Response·DTO 보완 후 재연동했습니다.</p></div><em>문제 해결</em></article>
-              <article><span class="highlight-icon">◎</span><div><h3>QR 세션과 영상 데이터 흐름 연결</h3><p>Redis 기반 QR 세션과 녹화 메타데이터의 생성·조회 흐름을 백엔드 기능에 연결했습니다.</p></div><em>데이터</em></article>
-              <article><span class="highlight-icon">▣</span><div><h3>게임 결과와 도감 데이터 일관성</h3><p>게임 성공 결과 저장과 해금 도감 반영이 함께 처리되도록 트랜잭션 흐름을 관리했습니다.</p></div><em>백엔드</em></article>
-              <article><span class="highlight-icon">◇</span><div><h3>서버 실행 환경과 배포 흐름 구성</h3><p>Docker, Nginx, Jenkins, AWS EC2를 활용해 서비스가 동작하는 환경까지 연결했습니다.</p></div><em>인프라</em></article>
-            </div>
-          </article>
+          <article class="project-card" data-project="cook" data-category="backend data-api infra" role="button" tabindex="0" aria-label="내 요리를 부탁해 프로젝트 상세 보기"><div class="project-image project-image-cook"><img src="./assets/ppt/image15.png" alt="내 요리를 부탁해 게임 화면" /><span class="project-type">팀 프로젝트</span></div><div class="project-body"><p class="project-role">Backend · Infra · Client</p><h3>내 요리를 부탁해</h3><p>JWT 인증, 도감 갱신 규칙, PostgreSQL 저장과 배포까지 맡은 비대칭 협동 요리 게임입니다.</p><ul class="project-tags"><li>Java</li><li>Spring Boot</li><li>PostgreSQL</li><li>JWT</li><li>Docker</li></ul><span class="project-link">자세히 보기 <span>→</span></span></div></article>
+          <article class="project-card" data-project="jipchak" data-category="backend data-api infra ai" role="button" tabindex="0" aria-label="JipChak 프로젝트 상세 보기"><div class="project-image project-image-jipchak"><img src="./assets/ppt/image10.png" alt="JipChak 게임 영상 화면" /><span class="project-type">팀 프로젝트</span></div><div class="project-body"><p class="project-role">Infra · Backend · AI Integration</p><h3>JipChak</h3><p>RealSense·YOLO 추론 결과와 Redis QR 세션, 게임 영상 조회를 하나의 사용자 흐름으로 연결했습니다.</p><ul class="project-tags"><li>Spring Boot</li><li>Redis</li><li>RunPod</li><li>YOLO</li><li>AWS</li></ul><span class="project-link">자세히 보기 <span>→</span></span></div></article>
+          <article class="project-card" data-project="hearbe" data-category="backend data-api collaboration" role="button" tabindex="0" aria-label="HearBe 프로젝트 상세 보기"><div class="project-image project-image-hearbe"><img src="./assets/ppt/image8.png" alt="HearBe 쇼핑 플랫폼 화면" /><span class="project-type">팀 프로젝트</span></div><div class="project-body"><p class="project-role">Frontend · Backend API Collaboration</p><h3>HearBe</h3><p>주문·찜 API 응답 누락을 찾아 DTO를 보완하고 화면까지 재연동한 시각장애인용 쇼핑 플랫폼입니다.</p><ul class="project-tags"><li>Spring Boot</li><li>Postman</li><li>DTO</li><li>React</li><li>Redis</li></ul><span class="project-link">자세히 보기 <span>→</span></span></div></article>
+          <article class="project-card" data-project="finance" data-category="personal data-api" role="button" tabindex="0" aria-label="소울링 캐릭터 반응형 가계부 프로젝트 상세 보기"><div class="project-image project-image-finance"><div class="finance-art" aria-hidden="true"><div class="finance-phone"><span class="finance-status">4월의 소울링</span><strong>₩ 428,000</strong><span class="finance-mascot">●ᴥ●</span><i></i><i></i><i></i><i></i></div></div><span class="project-type">개인 프로젝트 · 개발 중</span></div><div class="project-body"><p class="project-role">Product · Data · Mobile</p><h3>소울링 · 캐릭터 반응형 가계부</h3><p>수입·지출을 로컬에 저장하고 월별 합계에 따라 캐릭터가 반응하는 개인 금융 기록 앱입니다.</p><ul class="project-tags"><li>React Native</li><li>TypeScript</li><li>AsyncStorage</li><li>Java</li></ul><span class="project-link">자세히 보기 <span>→</span></span></div></article>
         </div>
       </section>
 
       <section class="page-section contact-section" id="contact">
-        <div class="section-index">06. CONTACT</div>
-        <div class="contact-layout">
-          <div class="contact-copy">
-            <p class="section-kicker">LET'S WORK TOGETHER</p>
-            <h2>함께 성장할 팀을 찾고 있습니다!</h2>
-            <p>새로운 기회나 협업에 대해 언제든지 편하게 연락해 주세요.</p>
-            <div class="contact-cards">
-              <a href="mailto:flysky1114@gmail.com"><span>✉</span><div><strong>flysky1114@gmail.com</strong><small>이메일 보내기</small></div></a>
-              <a href="https://github.com/smoothie-99" target="_blank" rel="noreferrer"><span>⌘</span><div><strong>github.com/smoothie-99</strong><small>프로필 보기</small></div></a>
-            </div>
-          </div>
-
-          <form class="contact-form" data-contact-form>
-            <label>이름<input type="text" name="name" autocomplete="name" required /></label>
-            <label>이메일<input type="email" name="email" autocomplete="email" required /></label>
-            <label>제목<input type="text" name="subject" required /></label>
-            <label>메시지<textarea name="message" rows="5" placeholder="메시지를 입력해 주세요." required></textarea></label>
-            <button class="button primary" type="submit">메시지 보내기</button>
-          </form>
-        </div>
+        <div class="contact-simple"><h2>CONTACT</h2><div class="contact-cards"><div class="contact-item"><span>01</span><div><small>NAME</small><strong>강한솔</strong></div></div><a class="contact-item" href="mailto:kanghansol9266@naver.com"><span>02</span><div><small>EMAIL</small><strong>kanghansol9266@naver.com</strong></div></a><a class="contact-item" href="https://github.com/smoothie-99" target="_blank" rel="noreferrer"><span>03</span><div><small>GITHUB</small><strong>github.com/smoothie-99</strong></div></a></div></div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <a class="brand" href="#top"><span class="brand-mark">⌘</span><span>BACKEND_</span></a>
-      <p>© 2026 강한솔. All rights reserved.</p>
-      <a href="#top">TOP ↑</a>
-      <div class="footer-links">
-        <a href="https://github.com/smoothie-99" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="mailto:flysky1114@gmail.com">Email</a>
-      </div>
-    </footer>
+    <footer class="site-footer"><a class="brand" href="#top"><span class="network-logo" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span>HANSOL</span></a><p>© 2026 강한솔. All rights reserved.</p><a href="#top">TOP ↑</a><div class="footer-links"><a href="https://github.com/smoothie-99" target="_blank" rel="noreferrer">GitHub</a><a href="mailto:kanghansol9266@naver.com">Email</a></div></footer>
 
     <dialog class="project-dialog" data-project-dialog aria-labelledby="dialog-title">
       <button class="dialog-close" type="button" data-dialog-close aria-label="프로젝트 상세 닫기">×</button>
-      <div class="dialog-hero">
-        <div>
-          <p class="dialog-type" data-dialog-type></p>
-          <h2 id="dialog-title" data-dialog-title></h2>
-          <p data-dialog-summary></p>
-          <ul class="project-tags" data-dialog-tags></ul>
-        </div>
-        <div class="dialog-visual" aria-hidden="true"><span>PROJECT</span><strong>DETAIL</strong></div>
-      </div>
-      <dl class="dialog-meta">
-        <div><dt>담당 역할</dt><dd data-dialog-role></dd></div>
-        <div><dt>팀 구성</dt><dd data-dialog-team></dd></div>
-        <div><dt>핵심 영역</dt><dd data-dialog-domain></dd></div>
-      </dl>
-      <div class="dialog-tabs" role="tablist" aria-label="프로젝트 상세 항목">
-        <button class="active" type="button" role="tab" data-detail-tab="overview" aria-selected="true">프로젝트 개요</button>
-        <button type="button" role="tab" data-detail-tab="features" aria-selected="false">주요 구현</button>
-        <button type="button" role="tab" data-detail-tab="decision" aria-selected="false">기술적 판단</button>
-        <button type="button" role="tab" data-detail-tab="result" aria-selected="false">성과</button>
-      </div>
+      <div class="dialog-hero"><div><p class="dialog-type" data-dialog-type></p><h2 id="dialog-title" data-dialog-title></h2><p data-dialog-summary></p><ul class="project-tags" data-dialog-tags></ul><a class="dialog-github" data-dialog-github target="_blank" rel="noreferrer">GitHub 저장소 ↗</a></div><div class="dialog-visual"><img data-dialog-image alt="" /><div class="finance-art dialog-finance-art" data-dialog-finance hidden aria-hidden="true"><div class="finance-phone"><span class="finance-status">4월의 소울링</span><strong>₩ 428,000</strong><span class="finance-mascot">●ᴥ●</span><i></i><i></i><i></i><i></i></div></div></div></div>
+      <dl class="dialog-meta"><div><dt>담당 역할</dt><dd data-dialog-role></dd></div><div><dt>구성</dt><dd data-dialog-team></dd></div><div><dt>핵심 영역</dt><dd data-dialog-domain></dd></div></dl>
+      <section class="dialog-architecture" aria-labelledby="architecture-title"><h3 id="architecture-title">시스템 아키텍처</h3><div class="architecture-flow" data-dialog-architecture></div><p data-dialog-architecture-note></p></section>
+      <nav class="dialog-tabs" aria-label="프로젝트 상세 바로가기"><button class="active" type="button" data-detail-jump="overview">프로젝트 개요</button><button type="button" data-detail-jump="features">주요 구현</button><button type="button" data-detail-jump="decision">기술적 판단</button><button type="button" data-detail-jump="result">성과</button></nav>
       <div class="dialog-detail" data-dialog-detail></div>
     </dialog>
-
-    <script src="./script.js?v=20260814-2"></script>
+    <script src="./script.js?v=20260814-4"></script>
   </body>
 </html>
