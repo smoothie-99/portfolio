@@ -11,22 +11,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Noto+Sans+KR:wght@400;500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css?v=20260814-3" />
   </head>
   <body>
     <header class="site-header" data-header>
       <a class="brand" href="#top" aria-label="홈으로 이동">
-        <span class="brand-mark">KH</span>
-        <span>Kang Hansol</span>
+        <span class="brand-mark">⌘</span>
+        <span>BACKEND_</span>
       </a>
       <nav class="nav-links" aria-label="주요 메뉴">
-        <a href="#skills">Skills</a>
-        <a href="#work">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
+        <a href="#about">소개</a>
+        <a href="#skills">기술 스택</a>
+        <a href="#work">프로젝트</a>
+        <a href="#experience">경력 &amp; 경험</a>
+        <a href="#contact">연락처</a>
       </nav>
       <button
         class="menu-toggle"
@@ -41,303 +42,243 @@
     </header>
 
     <main id="top">
-      <section class="hero">
+      <section class="hero" aria-labelledby="hero-title">
         <div class="hero-inner">
-          <p class="hero-eyebrow">BACKEND DEVELOPER · KANG HANSOL</p>
-          <h1>요구사항을 데이터와 API로<br />끝까지 연결합니다.</h1>
-          <div class="hero-rule" aria-hidden="true"></div>
-          <p class="hero-lead">
-            사용자에게 필요한 기능을 서버의 책임으로 구체화하고,<br />
-            구현부터 검증과 배포까지 완결하는 백엔드 개발자입니다.
-          </p>
-          <p class="hero-copy">
-            Java와 Spring Boot를 중심으로 REST API, JWT 인증, JPA 기반 데이터 저장을 구현했습니다.
-            Redis 세션과 AI 추론 결과를 서비스 흐름에 연결하고, Docker와 AWS 환경에서 동작하도록 구성한 경험이 있습니다.
-          </p>
-          <p class="hero-flow" aria-label="업무 접근 방식">
-            요구사항 <span>→</span> API <span>→</span> 데이터 <span>→</span> 인증 <span>→</span> 배포
-          </p>
-          <div class="hero-actions" aria-label="주요 행동">
-            <a class="button primary" href="#work">프로젝트 보기</a>
-            <a class="button ghost" href="https://github.com/smoothie-99" target="_blank" rel="noreferrer">GitHub</a>
+          <div class="hero-content">
+            <p class="hero-eyebrow">데이터와 로직 사이, 문제의 본질을 설계합니다.</p>
+            <h1 id="hero-title">흔적을 남기는 코드로,<br /><span>가치를 만드는 시스템으로.</span></h1>
+            <p class="hero-copy">
+              백엔드 개발자로서 안정적인 서비스의 기반을 설계하고 구현합니다.<br />
+              새로운 기술을 빠르게 학습하고, 팀과 함께 더 나은 서비스를 만들어갑니다.
+            </p>
+            <div class="hero-actions" aria-label="주요 행동">
+              <a class="button primary" href="#work">프로젝트 보기 <span aria-hidden="true">→</span></a>
+              <a class="button ghost" href="mailto:flysky1114@gmail.com">이메일 보내기</a>
+            </div>
+            <ul class="hero-chips" aria-label="프로필 요약">
+              <li><span aria-hidden="true">⌖</span> Seoul, KR</li>
+              <li><span aria-hidden="true">◷</span> 실무 경험 1년+</li>
+              <li><span aria-hidden="true">▣</span> 팀 협업 경험</li>
+              <li><span aria-hidden="true">↗</span> 새로운 기술에 관심</li>
+            </ul>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="network-grid"></div>
+            <div class="tech-cube cube-server"><span>SERVER</span></div>
+            <div class="tech-cube cube-code">&lt;/&gt;</div>
+            <div class="tech-cube cube-data">DB</div>
+            <div class="tech-cloud">CLOUD</div>
+            <span class="network-node node-one"></span>
+            <span class="network-node node-two"></span>
+            <span class="network-node node-three"></span>
           </div>
         </div>
       </section>
 
-      <section class="section profile-strip" aria-label="핵심 역량 요약">
-        <article>
-          <strong>Backend</strong>
-          <span>Java · Spring Boot · REST API</span>
-        </article>
-        <article>
-          <strong>Data</strong>
-          <span>JPA · PostgreSQL · Redis</span>
-        </article>
-        <article>
-          <strong>Delivery</strong>
-          <span>Docker · Nginx · Jenkins · AWS EC2</span>
-        </article>
+      <section class="profile-strip" aria-label="핵심 지표">
+        <article><strong>3+</strong><span>프로젝트 수행</span></article>
+        <article><strong>1+</strong><span>년 실무 경험</span></article>
+        <article><strong>10+</strong><span>핵심 기술 보유</span></article>
+        <article><strong>∞</strong><span>문제 해결에 진심</span></article>
       </section>
 
-      <section class="section skills-section" id="skills">
-        <div class="section-heading">
-          <span class="section-icon" aria-hidden="true">#</span>
-          <div>
-            <h2>Skills</h2>
-            <p class="section-copy">기술명보다 프로젝트에서 맡은 책임을 기준으로 정리했습니다.</p>
-          </div>
-        </div>
-        <div class="skills-layout">
-          <article class="skill-card primary-skill">
-            <h3>Backend</h3>
-            <ul>
-              <li>Java</li>
-              <li>Spring Boot</li>
-              <li>REST API</li>
-              <li>Controller–Service 구조</li>
-            </ul>
-          </article>
-          <article class="skill-card">
-            <h3>Data & Persistence</h3>
-            <ul>
-              <li>JPA</li>
-              <li>PostgreSQL</li>
-              <li>Redis</li>
-              <li>Transaction</li>
-            </ul>
-          </article>
-          <article class="skill-card">
-            <h3>API & Security</h3>
-            <ul>
-              <li>JWT</li>
-              <li>BCrypt</li>
-              <li>Stateless Auth</li>
-              <li>DTO</li>
-            </ul>
-          </article>
-          <article class="skill-card">
-            <h3>Infra & Delivery</h3>
-            <ul>
-              <li>Docker Compose</li>
-              <li>Nginx</li>
-              <li>Jenkins</li>
-              <li>AWS EC2</li>
-            </ul>
-          </article>
-          <article class="skill-card">
-            <h3>Service Integration</h3>
-            <ul>
-              <li>Redis Session</li>
-              <li>AI Inference API</li>
-              <li>Postman</li>
-              <li>Client Integration</li>
-            </ul>
-          </article>
-          <article class="skill-card">
-            <h3>Collaboration</h3>
-            <ul>
-              <li>API Specification</li>
-              <li>Git</li>
-              <li>GitLab</li>
-              <li>Jira</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="section work-section" id="work">
-        <div class="section-heading">
-          <span class="section-icon" aria-hidden="true">#</span>
-          <div>
-            <h2>Projects</h2>
-            <p class="section-copy">문제와 역할, 구현 근거, 검증 결과가 이어지도록 구성했습니다.</p>
-          </div>
+      <section class="page-section projects-section" id="work">
+        <div class="section-index">02. PROJECTS</div>
+        <div class="section-heading centered">
+          <p class="section-kicker">BACKEND PROJECTS</p>
+          <h2>직접 설계하고, 문제를 해결한 프로젝트</h2>
+          <p>사용자의 문제를 해결하기 위한 고민과 기술적 의사결정의 기록입니다.</p>
         </div>
 
         <div class="project-toolbar" aria-label="프로젝트 필터">
-          <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All</button>
-          <button class="filter-button" type="button" data-filter="backend" aria-pressed="false">Backend</button>
-          <button class="filter-button" type="button" data-filter="data-api" aria-pressed="false">Data · API</button>
-          <button class="filter-button" type="button" data-filter="infra" aria-pressed="false">Infra</button>
-          <button class="filter-button" type="button" data-filter="ai" aria-pressed="false">AI Integration</button>
-          <button class="filter-button" type="button" data-filter="collaboration" aria-pressed="false">Collaboration</button>
+          <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">전체</button>
+          <button class="filter-button" type="button" data-filter="backend" aria-pressed="false">백엔드</button>
+          <button class="filter-button" type="button" data-filter="data-api" aria-pressed="false">데이터 · API</button>
+          <button class="filter-button" type="button" data-filter="infra" aria-pressed="false">인프라</button>
+          <button class="filter-button" type="button" data-filter="ai" aria-pressed="false">AI 연계</button>
         </div>
 
-        <div class="project-list">
+        <div class="project-grid">
           <article class="project-card" data-category="backend data-api infra">
-            <div class="project-media">
-              <img class="project-main-image" src="./assets/ppt/image15.png" alt="내 요리를 부탁해 게임 화면" />
-              <div class="project-thumbs">
-                <img src="./assets/ppt/image18.png" alt="내 요리를 부탁해 플레이 화면" />
-              </div>
+            <div class="project-image project-image-cook">
+              <img src="./assets/ppt/image15.png" alt="내 요리를 부탁해 게임 화면" />
+              <span class="project-type">팀 프로젝트</span>
             </div>
-            <div class="project-content">
-              <p class="project-meta">2026.02 – 2026.03 · 6인 팀 · Backend / Infra / Client</p>
+            <div class="project-body">
+              <p class="project-role">Backend · Infra · Client</p>
               <h3>내 요리를 부탁해</h3>
-              <p class="project-focus">인증부터 데이터 저장과 배포까지 담당한 대표 백엔드 프로젝트</p>
-              <p class="project-summary">
-                두 사용자가 서로 다른 정보로 협력하는 비대칭 요리 게임입니다. 사용자 인증, 게임 결과와 도감 데이터의 저장·조회,
-                배포 환경을 맡아 클라이언트 기능이 서버 데이터로 이어지는 흐름을 구현했습니다.
-              </p>
-              <ul class="project-points">
-                <li><strong>인증</strong> SecurityConfig를 중심으로 JWT 기반 Stateless 인증·인가와 BCrypt 비밀번호 암호화 적용</li>
-                <li><strong>데이터</strong> Controller–Service–Repository 흐름에서 게임 결과와 해금 도감 데이터를 JPA·PostgreSQL로 저장·조회</li>
-                <li><strong>일관성</strong> 게임 성공 결과 저장과 도감 반영이 함께 처리되도록 트랜잭션 단위로 관리</li>
-                <li><strong>배포</strong> Docker Compose, Nginx, Jenkins, AWS EC2 환경을 구성하고 클라이언트 API 연동 확인</li>
-                <li><strong>클라이언트</strong> 재료 랜덤 배치 후 이동 가능 경로를 검증하는 절차적 맵 생성 로직 구현</li>
+              <p>JWT 인증부터 게임 데이터 저장, 배포 환경까지 연결한 비대칭 협동 요리 게임입니다.</p>
+              <ul class="project-tags">
+                <li>Java</li><li>Spring Boot</li><li>PostgreSQL</li><li>JWT</li><li>Docker</li>
               </ul>
-              <div class="project-tags">
-                <span>Spring Boot</span>
-                <span>JPA</span>
-                <span>PostgreSQL</span>
-                <span>JWT</span>
-                <span>Docker</span>
-              </div>
+              <button class="project-link" type="button" data-project="cook">자세히 보기 <span>→</span></button>
             </div>
           </article>
 
           <article class="project-card" data-category="backend data-api infra ai">
-            <div class="project-media">
-              <img class="project-main-image" src="./assets/ppt/image10.png" alt="JipChak 게임 영상 화면" />
-              <div class="project-thumbs">
-                <img src="./assets/ppt/image13.png" alt="JipChak QR 영상 조회 화면" />
-              </div>
+            <div class="project-image project-image-jipchak">
+              <img src="./assets/ppt/image10.png" alt="JipChak 게임 영상 화면" />
+              <span class="project-type">팀 프로젝트</span>
             </div>
-            <div class="project-content">
-              <p class="project-meta">2026.04 – 2026.05 · 5인 팀 · Infra / Backend / AI</p>
+            <div class="project-body">
+              <p class="project-role">Backend · Infra · AI Integration</p>
               <h3>JipChak</h3>
-              <p class="project-focus">AI 추론 결과를 사용자 기능으로 연결한 백엔드·인프라 프로젝트</p>
-              <p class="project-summary">
-                실시간 인형뽑기 성공 확률을 시각화하고, 게임 종료 후 영상을 QR로 제공하는 서비스입니다.
-                모델 개발 자체보다 추론 결과와 녹화 데이터를 서버 기능으로 전달하는 시스템 연결에 집중했습니다.
-              </p>
-              <ul class="project-points">
-                <li><strong>서비스 연계</strong> RunPod 추론 결과가 백엔드 API와 AWS 환경을 거쳐 웹 화면에 전달되는 흐름 구성</li>
-                <li><strong>세션·메타데이터</strong> Redis 기반 QR 세션과 녹화 영상 메타데이터의 생성·조회 흐름을 백엔드 기능에 연결</li>
-                <li><strong>AI 로직</strong> RealSense Depth 값과 탐지 결과를 이용하고 2발·3발 집게 구조별 확률 계산 방식 적용</li>
-                <li><strong>재사용성</strong> 모델 파일과 집게 구조를 교체할 수 있도록 확률 계산 파이프라인을 분리해 설계</li>
-                <li><strong>운영 기반</strong> Docker 기반 서비스 실행 환경과 AWS 배포 흐름 구성</li>
+              <p>AI 추론 결과와 QR 영상 조회 흐름을 사용자 기능으로 연결한 인형뽑기 플랫폼입니다.</p>
+              <ul class="project-tags">
+                <li>Spring Boot</li><li>Redis</li><li>Docker</li><li>RunPod</li><li>YOLO</li>
               </ul>
-              <div class="project-tags">
-                <span>Spring Boot</span>
-                <span>Redis</span>
-                <span>Docker</span>
-                <span>RunPod</span>
-                <span>YOLO</span>
-              </div>
+              <button class="project-link" type="button" data-project="jipchak">자세히 보기 <span>→</span></button>
             </div>
           </article>
 
           <article class="project-card" data-category="data-api collaboration">
-            <div class="project-media hearbe-media">
-              <img class="project-main-image" src="./assets/ppt/image8.png" alt="HearBe 쇼핑몰 선택 화면" />
-              <div class="project-thumbs">
-                <img src="./assets/ppt/image6.png" alt="HearBe 로그인 화면" />
-                <img src="./assets/ppt/image7.png" alt="HearBe 마이페이지 화면" />
-                <img src="./assets/ppt/image16.png" alt="HearBe 찜한 상품 화면" />
-                <img src="./assets/ppt/image12.png" alt="HearBe 복지카드 변경 화면" />
-              </div>
+            <div class="project-image project-image-hearbe">
+              <img src="./assets/ppt/image8.png" alt="HearBe 쇼핑 플랫폼 화면" />
+              <span class="project-type">팀 프로젝트</span>
             </div>
-            <div class="project-content">
-              <p class="project-meta">2026.01 – 2026.02 · 6인 팀 · Frontend / API Collaboration</p>
+            <div class="project-body">
+              <p class="project-role">Frontend · API Collaboration</p>
               <h3>HearBe</h3>
-              <p class="project-focus">API 소비자 관점에서 계약의 누락을 발견하고 개선한 협업 프로젝트</p>
-              <p class="project-summary">
-                시각장애인과 저시력 사용자가 음성으로 쇼핑부터 결제까지 진행하는 서비스입니다.
-                프론트엔드를 담당했지만, 화면 구현에 그치지 않고 API 명세와 응답 데이터의 완결성을 검증했습니다.
-              </p>
-              <ul class="project-points">
-                <li><strong>명세</strong> 사용자 흐름에 필요한 기능과 API 요청·응답 항목을 백엔드 팀과 협의</li>
-                <li><strong>검증</strong> Postman으로 회원정보, 주문 내역, 찜 상품, 장바구니 API를 먼저 점검한 뒤 화면 연동</li>
-                <li><strong>문제 발견</strong> 주문 상세 정보와 찜 상품의 이미지·가격 등 화면에 필요한 응답 데이터 누락 확인</li>
-                <li><strong>협업 해결</strong> Response·DTO 보완을 요청하고 수정된 API를 다시 검증해 연동 완료</li>
-                <li><strong>사용자 관점</strong> 시각장애인·저시력 사용자를 위한 별도 화면과 입력 유효성 검사 구현</li>
+              <p>API 명세와 응답 데이터를 검증하고 누락을 개선한 시각장애인용 음성 쇼핑 플랫폼입니다.</p>
+              <ul class="project-tags">
+                <li>API Spec</li><li>Postman</li><li>DTO</li><li>React</li>
               </ul>
-              <div class="project-tags">
-                <span>API Specification</span>
-                <span>Postman</span>
-                <span>DTO</span>
-                <span>React</span>
-                <span>Collaboration</span>
+              <button class="project-link" type="button" data-project="hearbe">자세히 보기 <span>→</span></button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="page-section about-section" id="about">
+        <div class="section-index">04. ABOUT &amp; SKILLS</div>
+        <div class="about-layout">
+          <article class="profile-panel">
+            <p class="panel-label">한눈에 보는 나</p>
+            <div class="avatar" aria-hidden="true">KH</div>
+            <h2>강한솔</h2>
+            <p class="profile-position">백엔드 개발자</p>
+            <blockquote>“문제를 정의하고 구조를 설계한 뒤, 실제 동작으로 끝까지 검증합니다.”</blockquote>
+            <div class="profile-links">
+              <a href="mailto:flysky1114@gmail.com">Email ↗</a>
+              <a href="https://github.com/smoothie-99" target="_blank" rel="noreferrer">GitHub ↗</a>
+            </div>
+          </article>
+
+          <article class="skills-panel" id="skills">
+            <p class="panel-label">기술 스택</p>
+            <dl class="skill-rows">
+              <div><dt>Language</dt><dd><span>Java</span><span>Python</span><span>JavaScript</span><span>SQL</span></dd></div>
+              <div><dt>Framework</dt><dd><span>Spring Boot</span><span>Spring Security</span><span>JPA</span><span>React</span></dd></div>
+              <div><dt>Database</dt><dd><span>PostgreSQL</span><span>Redis</span></dd></div>
+              <div><dt>Infra / DevOps</dt><dd><span>AWS EC2</span><span>Docker</span><span>Nginx</span><span>Jenkins</span></dd></div>
+              <div><dt>Tools</dt><dd><span>Postman</span><span>Jira</span><span>Git</span><span>GitLab</span></dd></div>
+            </dl>
+          </article>
+        </div>
+
+        <div class="strengths">
+          <p class="panel-label">강점 키워드</p>
+          <div class="strength-grid">
+            <article><span class="strength-icon">⌘</span><h3>문제 해결</h3><p>현상보다 원인을 추적하고 근거를 바탕으로 해결합니다.</p></article>
+            <article><span class="strength-icon">♧</span><h3>협업 &amp; 소통</h3><p>API 계약과 역할을 명확히 정리해 팀의 연결 비용을 줄입니다.</p></article>
+            <article><span class="strength-icon">↗</span><h3>학습 &amp; 성장</h3><p>필요한 기술을 빠르게 익혀 프로젝트에 적용합니다.</p></article>
+            <article><span class="strength-icon">◇</span><h3>책임감 &amp; 완결력</h3><p>구현을 넘어 연동과 배포 환경의 동작까지 확인합니다.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section experience-section" id="experience">
+        <div class="section-index">05. EXPERIENCE TIMELINE</div>
+        <div class="experience-layout">
+          <article class="career-column">
+            <p class="panel-label">경력</p>
+            <div class="timeline">
+              <span class="timeline-dot" aria-hidden="true">▣</span>
+              <div>
+                <h2>2차전지 장비 제조 회사</h2>
+                <p class="career-role">설계 엔지니어 · 약 1년</p>
+                <ul>
+                  <li>장비 구조와 요구사항을 도면으로 구체화</li>
+                  <li>BOM 작성 및 부품 구성·발주 관리</li>
+                  <li>현장 이슈를 분석하고 설계 개선안 반영</li>
+                  <li>변경 이력을 관리하며 부서 간 협업 수행</li>
+                </ul>
               </div>
             </div>
+            <p class="career-bridge">더 나은 시스템을 만들기 위해,<br /><strong>개발의 길로 전환했습니다.</strong><span>→</span></p>
+          </article>
+
+          <article class="highlight-column">
+            <p class="panel-label">주요 경험 하이라이트</p>
+            <div class="highlight-list">
+              <article><span class="highlight-icon">⌁</span><div><h3>API 응답 누락 발견 및 연동 개선</h3><p>Postman 검증으로 화면에 필요한 데이터 누락을 찾고 Response·DTO 보완 후 재연동했습니다.</p></div><em>문제 해결</em></article>
+              <article><span class="highlight-icon">◎</span><div><h3>QR 세션과 영상 데이터 흐름 연결</h3><p>Redis 기반 QR 세션과 녹화 메타데이터의 생성·조회 흐름을 백엔드 기능에 연결했습니다.</p></div><em>데이터</em></article>
+              <article><span class="highlight-icon">▣</span><div><h3>게임 결과와 도감 데이터 일관성</h3><p>게임 성공 결과 저장과 해금 도감 반영이 함께 처리되도록 트랜잭션 흐름을 관리했습니다.</p></div><em>백엔드</em></article>
+              <article><span class="highlight-icon">◇</span><div><h3>서버 실행 환경과 배포 흐름 구성</h3><p>Docker, Nginx, Jenkins, AWS EC2를 활용해 서비스가 동작하는 환경까지 연결했습니다.</p></div><em>인프라</em></article>
+            </div>
           </article>
         </div>
       </section>
 
-      <section class="section experience-section" id="experience">
-        <div class="section-heading">
-          <span class="section-icon" aria-hidden="true">#</span>
-          <div>
-            <h2>Experience</h2>
-            <p class="section-copy">경험의 분야는 달라도, 구조와 흐름을 끝까지 관리하는 방식은 이어집니다.</p>
-          </div>
-        </div>
-        <article class="experience-card">
-          <p class="experience-label">FROM MANUFACTURING TO BACKEND</p>
-          <h3>현장의 요구사항을 구조로 바꾸던 경험을 서버 개발로 확장했습니다.</h3>
-          <p>
-            제조 장비 설계와 BOM 관리, 부품 발주 업무를 수행하며 요구사항과 구성 요소의 연결 관계를 관리했습니다.
-            개발 프로젝트에서는 이 경험을 API 계약, 데이터 모델, 서비스 흐름으로 확장해 기능이 실제로 동작하는 지점까지 확인하고 있습니다.
-          </p>
-          <div class="principle-grid">
-            <div>
-              <strong>01 · 요구사항을 계약으로</strong>
-              <span>사용자 흐름을 엔드포인트와 요청·응답 DTO로 구체화합니다.</span>
-            </div>
-            <div>
-              <strong>02 · 데이터를 끝까지 추적</strong>
-              <span>생성, 저장, 조회, 전달 과정에서 누락되거나 어긋난 지점을 확인합니다.</span>
-            </div>
-            <div>
-              <strong>03 · 동작으로 검증</strong>
-              <span>Postman 검증과 클라이언트 연동, 배포 환경 실행까지 완료 기준으로 봅니다.</span>
+      <section class="page-section contact-section" id="contact">
+        <div class="section-index">06. CONTACT</div>
+        <div class="contact-layout">
+          <div class="contact-copy">
+            <p class="section-kicker">LET'S WORK TOGETHER</p>
+            <h2>함께 성장할 팀을 찾고 있습니다!</h2>
+            <p>새로운 기회나 협업에 대해 언제든지 편하게 연락해 주세요.</p>
+            <div class="contact-cards">
+              <a href="mailto:flysky1114@gmail.com"><span>✉</span><div><strong>flysky1114@gmail.com</strong><small>이메일 보내기</small></div></a>
+              <a href="https://github.com/smoothie-99" target="_blank" rel="noreferrer"><span>⌘</span><div><strong>github.com/smoothie-99</strong><small>프로필 보기</small></div></a>
             </div>
           </div>
-        </article>
-      </section>
 
-      <section class="section about-section" id="about">
-        <div class="about-grid">
-          <article class="about-card">
-            <strong>이름</strong>
-            <span>강한솔</span>
-          </article>
-          <article class="about-card">
-            <strong>지원 분야</strong>
-            <span>Java Backend Developer</span>
-          </article>
-          <article class="about-card">
-            <strong>강점</strong>
-            <span>API · 데이터 흐름 · 서비스 연계</span>
-          </article>
-          <article class="about-card">
-            <strong>이메일</strong>
-            <span>flysky1114@gmail.com</span>
-          </article>
-        </div>
-      </section>
-
-      <section class="section contact-section" id="contact">
-        <div class="contact-box">
-          <div>
-            <span class="section-icon" aria-hidden="true">#</span>
-            <h2>Contact</h2>
-            <p>문제를 구조화하고, 데이터와 API로 구현하며, 실제 동작까지 확인하는 백엔드 개발자 강한솔입니다.</p>
-          </div>
-          <div class="contact-actions">
-            <a class="button primary" href="mailto:flysky1114@gmail.com">Email</a>
-            <a class="button ghost" href="https://github.com/smoothie-99" target="_blank" rel="noreferrer">GitHub</a>
-          </div>
+          <form class="contact-form" data-contact-form>
+            <label>이름<input type="text" name="name" autocomplete="name" required /></label>
+            <label>이메일<input type="email" name="email" autocomplete="email" required /></label>
+            <label>제목<input type="text" name="subject" required /></label>
+            <label>메시지<textarea name="message" rows="5" placeholder="메시지를 입력해 주세요." required></textarea></label>
+            <button class="button primary" type="submit">메시지 보내기</button>
+          </form>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Kang Hansol · Backend Developer</p>
-      <a href="#top">Back to top</a>
+      <a class="brand" href="#top"><span class="brand-mark">⌘</span><span>BACKEND_</span></a>
+      <p>© 2026 강한솔. All rights reserved.</p>
+      <a href="#top">TOP ↑</a>
+      <div class="footer-links">
+        <a href="https://github.com/smoothie-99" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="mailto:flysky1114@gmail.com">Email</a>
+      </div>
     </footer>
 
-    <script src="./script.js"></script>
+    <dialog class="project-dialog" data-project-dialog aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" data-dialog-close aria-label="프로젝트 상세 닫기">×</button>
+      <div class="dialog-hero">
+        <div>
+          <p class="dialog-type" data-dialog-type></p>
+          <h2 id="dialog-title" data-dialog-title></h2>
+          <p data-dialog-summary></p>
+          <ul class="project-tags" data-dialog-tags></ul>
+        </div>
+        <div class="dialog-visual" aria-hidden="true"><span>PROJECT</span><strong>DETAIL</strong></div>
+      </div>
+      <dl class="dialog-meta">
+        <div><dt>담당 역할</dt><dd data-dialog-role></dd></div>
+        <div><dt>팀 구성</dt><dd data-dialog-team></dd></div>
+        <div><dt>핵심 영역</dt><dd data-dialog-domain></dd></div>
+      </dl>
+      <div class="dialog-tabs" role="tablist" aria-label="프로젝트 상세 항목">
+        <button class="active" type="button" role="tab" data-detail-tab="overview" aria-selected="true">프로젝트 개요</button>
+        <button type="button" role="tab" data-detail-tab="features" aria-selected="false">주요 구현</button>
+        <button type="button" role="tab" data-detail-tab="decision" aria-selected="false">기술적 판단</button>
+        <button type="button" role="tab" data-detail-tab="result" aria-selected="false">성과</button>
+      </div>
+      <div class="dialog-detail" data-dialog-detail></div>
+    </dialog>
+
+    <script src="./script.js?v=20260814-2"></script>
   </body>
 </html>
